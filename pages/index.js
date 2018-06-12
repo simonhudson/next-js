@@ -1,9 +1,14 @@
 'use strict';
 
-import SiteLogo from '../components/global/site-logo';
+import HeadingLevel1 from '../components/typography/heading-1';
+import HeadingLevel2 from '../components/typography/heading-2';
+import MainNav from '../components/layout/main-nav';
+import SiteLogo from '../components/layout/site-logo';
 
 export default () =>
 	<>
 		<SiteLogo></SiteLogo>
-		<p>Hello world</p>
+		<MainNav></MainNav>
+		<HeadingLevel1 string="Hello there!"></HeadingLevel1>
+		<HeadingLevel2 string="Secondary heading"></HeadingLevel2>
 	</>
