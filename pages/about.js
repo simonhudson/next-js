@@ -1,10 +1,8 @@
 'use strict';
 
-import css from '../static/css/styles.scss';
-
-import SiteLogo from '../components/layout/site-logo';
+import Heading from '../components/typography/heading';
 
 export default () =>
 	<>
-		<SiteLogo/>
+		<Heading level="1" text="About us"/>
 	</>

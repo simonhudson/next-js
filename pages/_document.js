@@ -1,5 +1,9 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 
+import css from '../static/css/styles.scss';
+import MainNav from '../components/layout/main-nav';
+import SiteLogo from '../components/layout/site-logo';
+
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {
 		const initialProps = await Document.getInitialProps(ctx)
@@ -14,6 +18,8 @@ export default class MyDocument extends Document {
 			</Head>
 			<body>
 				<div className="wrap">
+					<SiteLogo/>
+					<MainNav/>
 					<Main />
 				</div>
 			</body>

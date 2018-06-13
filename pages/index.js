@@ -1,12 +1,9 @@
 'use strict';
 
-import css from '../static/css/styles.scss';
-
-import MainNav from '../components/layout/main-nav';
-import SiteLogo from '../components/layout/site-logo';
+import Heading from '../components/typography/heading';
 
 export default () =>
 	<>
-		<SiteLogo/>
-		<MainNav/>
+		<Heading level="1" text="Home page"/>
+		<Heading level="2" text="Second heading"/>
 	</>
