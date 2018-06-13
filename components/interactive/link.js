@@ -1,6 +1,6 @@
 'use strict';
 
-export default ({text}) =>
+export default ({text, href}) =>
 	<>
 		<style jsx>{`
 		.link {
@@ -11,5 +11,5 @@ export default ({text}) =>
 			text-decoration: none;
 		}
 		`}</style>
-		<a class="link" href="{href}">{text}</a>
+		<a class="link" href={href}>{text}</a>
 	</>
