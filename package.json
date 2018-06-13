@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "dev": "next",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/simonhudson/next-js#readme",
   "dependencies": {
+    "@zeit/next-sass": "^0.2.0",
     "next": "^6.0.3",
+    "node-sass": "^4.9.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   }

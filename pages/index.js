@@ -1,5 +1,7 @@
 'use strict';
 
+import css from '../static/css/styles.scss';
+
 import HeadingLevel1 from '../components/typography/heading-1';
 import HeadingLevel2 from '../components/typography/heading-2';
 import Link from '../components/interactive/link';
@@ -15,6 +17,6 @@ export default () =>
 		<HeadingLevel1 string="Primary"/>
 		<HeadingLevel2 string="Secondary heading"/>
 		<Button text="Click me"/>
-		<p><Link href="http://experian.co.uk" text="Internal link" isExternal /></p>
+		<p><Link href="http://experian.co.uk" text="Internal link" /></p>
 		<p><ExternalLink href="http://bbc.co.uk" text="External link" /></p>
 	</>

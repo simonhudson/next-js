@@ -10,11 +10,10 @@ export default class MyDocument extends Document {
 		return (
 			<html>
 			<Head>
-				<style>{`body { margin: 0 } /* custom! */`}</style>
+				<link rel="stylesheet" href="/_next/static/style.css" />
 			</Head>
-			<body className="custom_class">
+			<body>
 				<Main />
-				<NextScript />
 			</body>
 			</html>
 		)

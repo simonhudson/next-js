@@ -8,5 +8,5 @@ export default () =>
 			width: 200px;
 		}
 		`}</style>
-		<img class="site-logo" src="/static/imgs/experian-logo.svg" alt="Experian" />
+		<img className="site-logo" src="/static/imgs/experian-logo.svg" alt="Experian" />
 	</>
