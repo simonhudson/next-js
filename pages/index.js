@@ -12,9 +12,9 @@ export default () =>
 	<>
 		<SiteLogo/>
 		<MainNav/>
-		<HeadingLevel1 string="Hello there"/>
+		<HeadingLevel1 string="Primary"/>
 		<HeadingLevel2 string="Secondary heading"/>
-		<Button text="Click me"></Button>
-		<p><Link href="http://experian.co.uk" text="Internal link" /></p>
+		<Button text="Click me"/>
+		<p><Link href="http://experian.co.uk" text="Internal link" isExternal /></p>
 		<p><ExternalLink href="http://bbc.co.uk" text="External link" /></p>
 	</>
