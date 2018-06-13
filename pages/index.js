@@ -9,10 +9,10 @@ import SiteLogo from '../components/layout/site-logo';
 
 export default () =>
 	<>
-		<SiteLogo></SiteLogo>
-		<MainNav></MainNav>
-		<HeadingLevel1 string="Hello there!"></HeadingLevel1>
-		<HeadingLevel2 string="Secondary heading"></HeadingLevel2>
+		<SiteLogo/>
+		<MainNav/>
+		<HeadingLevel1 string="Hello there"/>
+		<HeadingLevel2 string="Secondary heading"/>
 		<Button text="Click me"></Button>
-		<p>This is a <Link href="http://www.bbc.co.uk" text="BBC link"></Link></p>
+		<p>This is a <Link href="http://www.bbc.co.uk" text="BBC site" /></p>
 	</>
