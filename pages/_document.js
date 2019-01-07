@@ -1,5 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document'
-import css from '../static/css/styles.scss';
+import css from 'static/css/styles.scss';
 
 import Alert from 'components/alert';
 import MainNavigation from 'components/navigation/main-navigation';
