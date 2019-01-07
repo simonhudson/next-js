@@ -1,20 +1,25 @@
 *,
 fieldset {
-    box-sizing:border-box;
+    box-sizing: border-box;
 	font-family: $base-font-family;
     font-size: $base-font-size;
-	font-weight: $base-font-weight;
+    font-weight: $base-font-weight;
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
 }
 
 html {
-    background: rgba(palette(primary, a), .1);
+    background: #fff;
     position: relative;
 }
 
 span, strong, em {
     font-family: inherit;
     font-size: inherit;
+}
+
+.no-js-alert {
+    @include margin-b-lg();
+    display: block;
 }

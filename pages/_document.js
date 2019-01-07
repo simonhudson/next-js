@@ -1,8 +1,11 @@
+'use strict';
+
 import Document, { Head, Main, NextScript } from 'next/document'
 import css from 'static/css/styles.scss';
 
 import Alert from 'components/alert';
 import MainNavigation from 'components/navigation/main-navigation';
+import SiteHeader from 'components/site-header';
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -17,12 +20,15 @@ export default class MyDocument extends Document {
 				<link rel="stylesheet" href="/_next/static/style.css" />
 			</Head>
 			<body>
-				<noscript>
+				<noscript className="no-js-alert">
 					<Alert type="warning">
-						<p>This site works best when JavaScript is available in your browser.</p>
+						<div className="wrap">
+							<p>This site works best when JavaScript is available in your browser.</p>
+						</div>
 					</Alert>
 				</noscript>
 				<div className="wrap">
+					<SiteHeader />
 					<MainNavigation />
 					<Main />
 				</div>

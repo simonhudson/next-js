@@ -1,7 +1,7 @@
 @import 'static/css/styles';
 
 .main-navigation {
-	border-bottom: 1px solid #ddd;
+	@include border-bottom();
 }
 
 .main-navigation ul {

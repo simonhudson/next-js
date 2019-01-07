@@ -1,4 +1,8 @@
 .wrap {
+	@include width-full();
 	margin: 0 auto;
-	width: 85%;
+	
+	@include breakpoint(tab-p) {
+	    width: 85%;
+	}
 }

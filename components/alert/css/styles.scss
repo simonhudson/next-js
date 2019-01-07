@@ -1,5 +1,7 @@
+@import 'static/css/styles';
+
 .alert {
-	padding: 10px;
+	@include padding-lg();
 }
 
 $spacing: 8px;
@@ -14,21 +16,21 @@ $warning: #eeb320;
 $warningTint: #FCF6EB;
 
 .alert--is-error {
-	background-color: $errorTint;
+	background-color: rgba($error, .5);
 	border-color: $error;
 }
 
 .alert--is-info {
-	background-color: $infoTint;
+	background-color: rgba($info, .5);
 	border-color: $info;
 }
 
 .alert--is-success {
-	background-color: $successTint;
+	background-color: rgba($success, .5);
 	border-color: $success;
 }
 
 .alert--is-warning {
-	background-color: $warningTint;
+	background-color: rgba($warning, .5);
 	border-color: $warning;
 }
