@@ -1,8 +1,15 @@
 'use strict';
 
-import Heading from '../components/typography/heading';
+import React from 'react';
 
-export default () =>
-	<>
-		<Heading level="1" text="About us"/>
-	</>
+import Heading from 'components/typography/heading';
+
+const About = props => {
+	return (
+		<>
+			<Heading level="1">About</Heading>
+		</>
+	);
+};
+
+export default About;

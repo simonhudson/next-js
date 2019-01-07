@@ -1,9 +1,15 @@
 'use strict';
 
-import Heading from '../components/typography/heading';
+import React from 'react';
 
-export default () =>
-	<>
-		<Heading level="1" text="Home page"/>
-		<Heading level="2" text="Second heading"/>
-	</>
+import Heading from 'components/typography/heading';
+
+const Home = props => {
+	return (
+		<>
+			<Heading level="1">Home</Heading>
+		</>
+	);
+};
+
+export default Home;

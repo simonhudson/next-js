@@ -1,0 +1,34 @@
+.alert {
+	padding: 10px;
+}
+
+$spacing: 8px;
+
+$error: #f00;
+$errorTint: #F7E6ED;
+$info: #015cae;
+$infoTint: #ECF0F7;
+$success: #01943b;
+$successTint: #F0F6E8;
+$warning: #eeb320;
+$warningTint: #FCF6EB;
+
+.alert--is-error {
+	background-color: $errorTint;
+	border-color: $error;
+}
+
+.alert--is-info {
+	background-color: $infoTint;
+	border-color: $info;
+}
+
+.alert--is-success {
+	background-color: $successTint;
+	border-color: $success;
+}
+
+.alert--is-warning {
+	background-color: $warningTint;
+	border-color: $warning;
+}

@@ -1,14 +1,36 @@
 'use strict';
 
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import css from './css/styles.scss';
 
-const setHeading = (level, text) => {
-	if (level == 1) return <h1>{text}</h1>;
-	if (level == 2) return <h2>{text}</h2>;
-	if (level == 3) return <h3>{text}</h3>;
-	if (level == 4) return <h4>{text}</h4>;
-	if (level == 5) return <h5>{text}</h5>;
-	if (level == 6) return <h6>{text}</h6>;
+const Heading = props => {
+	
+	const { children, level } = props;
+	
+	switch(level) {
+		case '1':
+			return <h1>{children}</h1>
+			break;
+		case '2':
+			return <h2>{children}</h2>
+			break;
+		case '3':
+			return <h3>{children}</h3>
+			break;
+		case '4':
+			return <h4>{children}</h4>
+			break;
+		case '5':
+			return <h5>{children}</h5>
+			break;
+		case '6':
+			return <h6>{children}</h6>
+			break;
+		default:
+			return (null);
+	}
 };
 
-export default ({level, text}) => setHeading(level, text);
+export default Heading;

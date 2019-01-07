@@ -1,8 +1,8 @@
 import Document, { Head, Main, NextScript } from 'next/document'
-
 import css from '../static/css/styles.scss';
-import MainNav from '../components/layout/main-nav';
-import SiteLogo from '../components/layout/site-logo';
+
+import Alert from 'components/alert';
+import MainNavigation from 'components/navigation/main-navigation';
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -17,9 +17,13 @@ export default class MyDocument extends Document {
 				<link rel="stylesheet" href="/_next/static/style.css" />
 			</Head>
 			<body>
+				<noscript>
+					<Alert type="warning">
+						<p>This site works best when JavaScript is available in your browser.</p>
+					</Alert>
+				</noscript>
 				<div className="wrap">
-					<SiteLogo/>
-					<MainNav/>
+					<MainNavigation />
 					<Main />
 				</div>
 			</body>
