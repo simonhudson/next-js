@@ -3,6 +3,13 @@
 import React, { Component } from 'react';
 
 import css from './css/styles.scss';
+import Item from './item';
+
+const ITEMS = [
+	{ href: '/', text: 'Home' },
+	{ href: '/about', text: 'About' },
+	{ href: '/contact', text: 'Contact' }
+]
 
 class MainNavigation extends Component {
 
@@ -26,12 +33,7 @@ class MainNavigation extends Component {
 				</button>
 				<nav className={`main-navigation ${this.state.isOpen ? 'main-navigation--is-open' : ''}`}>
 					<ul className="main-navigation__list">
-						<li className="main-navigation__item">
-							<a className="main-navigation__link" href="/">Home</a>
-						</li>
-						<li className="main-navigation__item">
-							<a className="main-navigation__link" href="/about">About</a>
-						</li>
+						{ITEMS.map((item, index) => <Item href={item.href} text={item.text} key={index}/>)}
 					</ul>
 				</nav>
 			</>
