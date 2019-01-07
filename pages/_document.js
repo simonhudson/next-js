@@ -4,7 +4,6 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import css from 'static/css/styles.scss';
 
 import Alert from 'components/alert';
-import MainNavigation from 'components/navigation/main-navigation';
 import SiteHeader from 'components/site-header';
 
 export default class MyDocument extends Document {
@@ -17,6 +16,8 @@ export default class MyDocument extends Document {
 		return (
 			<html>
 			<Head>
+				<title></title>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<link rel="stylesheet" href="/_next/static/style.css" />
 			</Head>
 			<body>
@@ -29,7 +30,6 @@ export default class MyDocument extends Document {
 				</noscript>
 				<div className="wrap">
 					<SiteHeader />
-					<MainNavigation />
 					<Main />
 				</div>
 			</body>

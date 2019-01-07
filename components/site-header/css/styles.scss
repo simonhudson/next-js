@@ -1,5 +1,12 @@
 @import 'static/css/styles';
 
 .site-header {
-	@include padding-b-lg();
+	@include padding();
+	position: relative;
+	
+	@include breakpoint(tab-p) {
+	    @include no-padding();
+		@include padding-b-lg();
+	}
+		
 }

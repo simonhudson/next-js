@@ -1,0 +1,19 @@
+body::after {
+	@include position-bl();
+	@include visuallyhidden();
+	display: inline-block;
+	content: 'mobile';
+	
+	@include breakpoint(tab-p) {
+	    content: 'tablet-p'
+	}
+	
+	@include breakpoint(tab-l) {
+	    content: 'tablet-l'
+	}
+	
+	@include breakpoint(desktop) {
+	    content: 'desktop'
+	}
+	
+}

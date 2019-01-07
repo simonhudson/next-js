@@ -1,0 +1,54 @@
+@import 'static/css/styles';
+
+.main-navigation {
+	@include animation-defaults();
+	@include border-r();
+	@include position-tl();
+	background: #fff;
+	box-shadow: 0 0 10px #ddd;
+	height: 100vh;
+	left: -100vw;
+	max-width: 33vh;
+	width: 33vh;
+}
+
+.main-navigation--is-open {
+	animation-name: slide-in-from-left;
+}
+
+.main-navigation--is-closed {
+	animation-name: slide-out-to-left;
+}
+
+.main-navigation__list {
+	list-style: none;
+}
+
+.main-navigation__link {
+	@include border-b();
+	@include padding-lg();
+	@include uppercase();
+	display: block;
+	text-decoration: none;
+}
+
+.main-navigation__toggle {
+	@include position-tr($spacing);
+}
+
+
+// .main-navigation {
+// 	@include border-bottom();
+// }
+// 
+// 
+// .main-navigation li,
+// .main-navigation a {
+// 	display: inline-block;
+// }
+// 
+// .main-navigation a {
+// 	@include strong();
+// 	padding: $spacing;
+// 	text-decoration: none;
+// }
