@@ -26,10 +26,8 @@ export default class App extends Document {
 			</Head>
 			<body>
 				<noscript className="no-js-alert">
-					<Alert type="warning">
-						<div className="wrap">
-							<p>This site works best when JavaScript is available in your browser.</p>
-						</div>
+					<Alert type="warning" hasIcon={true}>
+						<p>This site works best when JavaScript is available in your browser.</p>
 					</Alert>
 				</noscript>
 				<div className="wrap">

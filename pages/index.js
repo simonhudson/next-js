@@ -2,6 +2,7 @@
 
 import React from 'react';
 
+import Alert from 'components/alert';
 import Heading from 'components/typography/heading';
 
 const Home = props => {

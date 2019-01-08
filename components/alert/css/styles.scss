@@ -1,9 +1,5 @@
 @import 'static/css/styles';
 
-.alert {
-	@include padding-lg();
-}
-
 $spacing: 8px;
 
 $error: #f00;
@@ -15,22 +11,42 @@ $successTint: #F0F6E8;
 $warning: #eeb320;
 $warningTint: #FCF6EB;
 
+.alert {
+	@include padding-lg();
+	align-items: center;
+	display: flex;
+}
+
+.alert--has-icon {
+	
+}
+
+.alert__icon {
+	@include margin-r();
+	height: auto;
+	width: 25px;
+}
+
+.alert p:last-of-type {
+	margin: 0;
+}
+
 .alert--is-error {
-	background-color: rgba($error, .5);
+	background-color: rgba($error, .4);
 	border-color: $error;
 }
 
 .alert--is-info {
-	background-color: rgba($info, .5);
+	background-color: rgba($info, .4);
 	border-color: $info;
 }
 
 .alert--is-success {
-	background-color: rgba($success, .5);
+	background-color: rgba($success, .4);
 	border-color: $success;
 }
 
 .alert--is-warning {
-	background-color: rgba($warning, .5);
+	background-color: rgba($warning, .4);
 	border-color: $warning;
 }

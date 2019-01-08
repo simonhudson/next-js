@@ -12,22 +12,27 @@ const VALID_TYPES = [
 	'warning',
 ];
 
+const renderIcon = type => {
+	return (
+		<img alt="" className="alert__icon" src={`/static/imgs/icons/${type}--dark.svg`} />
+	);
+};
+
 const Alert = props => {
+	
+	if (!VALID_TYPES.includes(props.type)) return null;
 	
 	const { children, hasIcon, type } = props;
 
 	return (
 		<>
-			<div className={`alert alert--is-${type}`}>
+			<div className={`alert alert--is-${type} ${hasIcon ? 'alert--has-icon' : ''}`}>
+				{hasIcon ? renderIcon(type) : null}
 				{children}
 			</div>
 		</>
 	);
 
 };
-
-Alert.propTypes = {
-	type: PropTypes.oneOf(['error', 'info', 'success', 'warning'])
-}
 
 export default Alert;

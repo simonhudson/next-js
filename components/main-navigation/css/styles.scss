@@ -49,8 +49,11 @@
 	@include border-b();
 	@include padding-lg();
 	@include uppercase();
+	color: palette(primary, bodyText);
 	display: block;
 	text-decoration: none;
+	
+	
 	
 	@include breakpoint(tab-l) {
 		border: 0;
@@ -61,7 +64,7 @@
 .main-navigation__link--current {
 	
 	@include breakpoint(tab-l) {
-	    border-bottom: 2px solid palette(primary, b);
+	    border-bottom: 2px solid palette(primary, bodyText);
 	}
 	
 }

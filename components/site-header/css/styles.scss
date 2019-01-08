@@ -6,6 +6,7 @@
 	
 	@include breakpoint(tab-p) {
 	    @include no-padding();
+		@include padding-t-lg();
 		@include padding-b-lg();
 	}
 		
