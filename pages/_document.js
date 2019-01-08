@@ -6,13 +6,17 @@ import css from 'static/css/styles.scss';
 import Alert from 'components/alert';
 import SiteHeader from 'components/site-header';
 
-export default class MyDocument extends Document {
+export default class App extends Document {
+	
 	static async getInitialProps(ctx) {
 		const initialProps = await Document.getInitialProps(ctx)
 		return { ...initialProps }
 	}
 
 	render() {
+		
+		const { props } = this;
+		
 		return (
 			<html>
 			<Head>
@@ -29,7 +33,7 @@ export default class MyDocument extends Document {
 					</Alert>
 				</noscript>
 				<div className="wrap">
-					<SiteHeader />
+					<SiteHeader {...props} />
 					<Main />
 				</div>
 			</body>

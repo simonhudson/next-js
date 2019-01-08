@@ -8,12 +8,14 @@ import MainNavigation from 'components/main-navigation';
 import SiteLogo from 'components/site-logo';
 
 const SiteHeader = props => {
-        	
+    
+    const currentPath = props.__NEXT_DATA__.pathname;
+    
 	return (
 		<>
 			<header className="site-header">
 				<SiteLogo />
-				<MainNavigation />
+				<MainNavigation currentPath={currentPath}/>
 			</header>
 		</>
 	);	

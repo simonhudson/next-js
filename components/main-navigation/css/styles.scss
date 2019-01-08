@@ -10,6 +10,19 @@
 	left: -100vw;
 	max-width: 33vw;
 	width: 33vw;
+	
+	@include breakpoint(tab-l) {
+		@include width-full();
+		border: 0;
+		@include border-b();
+		box-shadow: none;
+		height: auto;
+		left: 0;
+		max-width: 100%;
+	    position: static;
+		top: auto;
+	}
+	
 }
 
 .main-navigation--is-open {
@@ -24,31 +37,39 @@
 	list-style: none;
 }
 
+.main-navigation__item {
+	
+	@include breakpoint(tab-l) {
+	    display: inline;
+	}
+	
+}
+
 .main-navigation__link {
 	@include border-b();
 	@include padding-lg();
 	@include uppercase();
 	display: block;
 	text-decoration: none;
+	
+	@include breakpoint(tab-l) {
+		border: 0;
+	    display: inline-block;
+	}
+}
+
+.main-navigation__link--current {
+	
+	@include breakpoint(tab-l) {
+	    border-bottom: 2px solid palette(primary, b);
+	}
+	
 }
 
 .main-navigation__toggle {
 	@include position-tr($spacing);
+	
+	@include breakpoint(tab-l) {
+	    // display: none;
+	}
 }
-
-
-// .main-navigation {
-// 	@include border-bottom();
-// }
-// 
-// 
-// .main-navigation li,
-// .main-navigation a {
-// 	display: inline-block;
-// }
-// 
-// .main-navigation a {
-// 	@include strong();
-// 	padding: $spacing;
-// 	text-decoration: none;
-// }

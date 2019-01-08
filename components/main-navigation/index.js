@@ -25,7 +25,7 @@ class MainNavigation extends Component {
 	};
 	
 	render = () => {
-
+		
 		return (
 			<>
 				<button className={`main-navigation__toggle ${this.state.isOpen ? 'main-navigation--is-open' : ''}`} onClick={this.toggleState} type="button">
@@ -33,7 +33,7 @@ class MainNavigation extends Component {
 				</button>
 				<nav className={`main-navigation ${this.state.isOpen ? 'main-navigation--is-open' : ''}`}>
 					<ul className="main-navigation__list">
-						{ITEMS.map((item, index) => <Item href={item.href} text={item.text} key={index}/>)}
+						{ITEMS.map((item, index) => <Item href={item.href} text={item.text} isCurrentPath={item.href === this.props.currentPath} key={index}/>)}
 					</ul>
 				</nav>
 			</>
