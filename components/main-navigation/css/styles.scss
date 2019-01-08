@@ -70,9 +70,22 @@
 }
 
 .main-navigation__toggle {
+	@include no-padding();
 	@include position-tr($spacing);
+	align-items: center;
+	background: #fff;
+	border: 0;
+	display: flex;
+	height: 30px;
+	width: 30px;
 	
 	@include breakpoint(tab-l) {
 	    // display: none;
 	}
+	
+}
+
+.main-navigation__toggle-icon {
+	height: auto;
+	width: 100%;
 }

@@ -18,19 +18,19 @@ class MainNavigation extends Component {
 		this.state = {};
 		this.state.isOpen = false;
 	}
-
-	toggleState = () => {
-		const newState = !this.state.isOpen;
-		this.setState({ isOpen: newState });
-	};
 	
 	render = () => {
 		
 		return (
 			<>
-				<button className={`main-navigation__toggle ${this.state.isOpen ? 'main-navigation--is-open' : ''}`} onClick={this.toggleState} type="button">
-					Menu
-				</button>
+			<button
+				className="main-navigation__toggle"
+				onClick={() => { this.setState(prevState => ({ isOpen: !prevState.isOpen }))}}
+				type="button"
+			>
+				<img alt="" className="main-navigation__toggle-icon" src="/static/imgs/icons/menu--dark.svg" />
+				<span className="visuallyhidden">Menu</span>
+			</button>
 				<nav className={`main-navigation ${this.state.isOpen ? 'main-navigation--is-open' : ''}`}>
 					<ul className="main-navigation__list">
 						{ITEMS.map((item, index) => <Item href={item.href} text={item.text} isCurrentPath={item.href === this.props.currentPath} key={index}/>)}
