@@ -1,12 +1,10 @@
 'use strict';
 
 import React from 'react';
-import PropTypes from 'prop-types';
-
 import css from './css/styles.scss';
 
 const Heading = props => {
-	
+
 	const { children, level } = props;
 	
 	switch(level) {
