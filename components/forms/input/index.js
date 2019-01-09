@@ -14,10 +14,15 @@ const Input = props => {
 		validation,
 	} = props;
 
+	const getType = () => type ? type : 'text';
+
 	return (
 		<>
 			<label className={`${labelIsHidden ? 'visuallyhidden' : ''}`} htmlFor={`${id}`}>{`${label}`}</label>
-			<input id={`${id}`} />
+			<input
+				id={`${id}`}
+				type={getType()}
+			/>
 		</>
 	);
 

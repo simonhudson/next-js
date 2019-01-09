@@ -10,6 +10,7 @@ const Contact = props => {
 		<>
 			<Heading level="1">Contact</Heading>
 			<Input id="contact-name" label="Name" />
+			<Input id="contact-phone" label="Phone number" type="number" />
 		</>
 	);
 };
