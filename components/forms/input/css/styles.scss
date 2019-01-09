@@ -1,0 +1,20 @@
+@import 'static/css/styles';
+
+label {
+	@include margin-b();
+	@include semi-strong();
+	display: block;
+}
+
+input {
+	@include border();
+	@include border-radius();
+	@include box-shadow($spread: 0);
+	@include padding();
+	@include transition();
+}
+
+input:focus {
+	@include box-shadow();
+	border-color: palette(primary, a);
+}

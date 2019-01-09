@@ -1,11 +1,9 @@
 'use strict';
 
 import React from 'react';
-
-import css from './css/styles.scss';
-
 import MainNavigation from 'components/main-navigation';
 import SiteLogo from 'components/site-logo';
+import css from './css/styles.scss';
 
 const SiteHeader = props => {
     
