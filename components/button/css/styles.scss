@@ -1,0 +1,25 @@
+@import 'static/css/styles';
+
+.btn {
+	@include padding-lg();
+	@include uppercase();
+	background: #fff;
+	border: 2px solid palette(primary, bodyText);
+	color: palette(primary, bodyText);
+	display: inline-block;
+}
+
+.btn--primary,
+.btn--secondary {
+	color: palette(primary, white);
+}
+
+.btn--primary {
+	background: palette(primary, a);
+	border-color: palette(primary, a);
+}
+
+.btn--secondary {
+	background: palette(primary, b);
+	border-color: palette(primary, b);
+}
