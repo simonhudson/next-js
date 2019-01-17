@@ -3,10 +3,9 @@
 import React from 'react';
 import css from './css/styles.scss';
 
-const setClass = level => {
-    if (!level) return '';
-    return `btn--${level}`;
-}
+const VALID_BUTTON_VARIANTS = ['primary', 'secondary'];
+
+const setClass = level => `btn--${VALID_BUTTON_VARIANTS.indexOf(level) > -1 ? level : 'primary'}`;
 
 const Button = props => {
     

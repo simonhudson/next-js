@@ -5,9 +5,9 @@
 	position: relative;
 	
 	@include breakpoint(tab-p) {
+		@include border-b();
 	    @include no-padding();
 		@include padding-t-lg();
-		@include padding-b-lg();
 	}
 		
 }

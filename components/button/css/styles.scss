@@ -1,6 +1,7 @@
 @import 'static/css/styles';
 
 .btn {
+	@include border-radius();
 	@include padding-lg();
 	@include uppercase();
 	background: #fff;

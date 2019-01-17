@@ -14,7 +14,6 @@
 	@include breakpoint(tab-l) {
 		@include width-full();
 		border: 0;
-		@include border-b();
 		box-shadow: none;
 		height: auto;
 		left: 0;
