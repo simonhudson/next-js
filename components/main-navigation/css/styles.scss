@@ -47,6 +47,7 @@
 .main-navigation__link {
 	@include border-b();
 	@include padding-lg();
+	@include semi-strong();
 	@include uppercase();
 	color: palette(primary, bodyText);
 	display: block;

@@ -1,11 +1,14 @@
 @import 'static/css/styles';
 
 .blockquote {
+	@include flourish();
 	@include margin-b-xlg();
 	@include padding-lg();
+	@include serif();
 	@include width-full();
 	border-left: 5px solid #dedede;
-	line-height: $base-line-height;
+	font-size: rem($base-font-size * 1.1);
+	line-height: $base-line-height * 1.2;
 	
 	@include breakpoint(tab-l) {
 	    width: 50%;
@@ -14,22 +17,26 @@
 }
 
 .blockquote--has-author {
+	@include padding-b-xlg();
 	position: relative;
 }
 
 .blockquote__author {
 	@include position-br(0, $spacing-lg);
+	@include sans-serif();
+	@include semi-strong();
 	@include small();
 	@include uppercase();
+	font-style: normal;
 	letter-spacing: rem(1px);
 	
 	&::before {
 		@include margin-r();
-		background: #ddd;
+		background: palette(primary, bodyText);
 		content: '';
 		display: inline-block;
 		height: 1px;
 		vertical-align: middle;
-		width: $base-font-size;
+		width: $base-font-size * 0.5;
 	}
 }
