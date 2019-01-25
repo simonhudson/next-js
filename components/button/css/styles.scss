@@ -1,8 +1,9 @@
 @import 'static/css/styles';
 
 .btn {
-	@include border-radius();
-	@include padding-lg();
+	@include padding-x-lg();
+	@include padding-y();
+	@include semi-strong();
 	@include uppercase();
 	background: #fff;
 	border: 2px solid palette(primary, bodyText);

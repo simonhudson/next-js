@@ -8,7 +8,9 @@
 		@include border-b();
 		@include margin-b-xlg();
 	    @include no-padding();
-		@include padding-t-lg();
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
 	}
 		
 }

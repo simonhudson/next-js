@@ -15,7 +15,9 @@
 		@include width-full();
 		border: 0;
 		box-shadow: none;
+		display: flex;
 		height: auto;
+		justify-content: flex-end;
 		left: 0;
 		max-width: 100%;
 	    position: static;
@@ -80,7 +82,7 @@
 	width: 30px;
 	
 	@include breakpoint(tab-l) {
-	    // display: none;
+	    display: none;
 	}
 	
 }
