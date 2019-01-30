@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import Link from 'next/link';
 
 const Item = props => {
 
@@ -8,7 +9,11 @@ const Item = props => {
 
 	return (
 		<li className="main-navigation__item">
-			<a className={`main-navigation__link ${isCurrentPath ? 'main-navigation__link--current' : ''}`} href={`${href}`}>{text}</a>
+			<Link href={`${href}`}>
+				<a className={`main-navigation__link ${isCurrentPath ? 'main-navigation__link--current' : ''}`}>
+					{text}
+				</a>
+			</Link>
 		</li>
 	);
 

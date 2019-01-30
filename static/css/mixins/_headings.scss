@@ -3,7 +3,7 @@
 	font-family: $base-font-serif;
 	// font-weight: regular;
 	line-height: 1.4em;
-	margin-bottom:1rem;
+	margin-bottom: 1rem;
 }
 @mixin h1() {
 	@include headings();
