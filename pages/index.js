@@ -22,6 +22,8 @@ const Home = props => {
 			<BlockQuote author="Joe Bloggs">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel turpis erat. Donec lacinia enim sollicitudin quam dapibus, non venenatis sapien mollis.
 			</BlockQuote>
+			<Button type="submit">Button 1</Button>
+			<Button level="secondary">Button 2</Button>
 		</>
 	);
 };
