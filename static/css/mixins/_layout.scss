@@ -8,3 +8,12 @@
 		width: 85%;
 	}
 }
+
+@mixin wrap-narrow() {
+	@include wrap();
+
+	@include breakpoint(tab-p) {
+		width: 45%;
+	}
+
+}

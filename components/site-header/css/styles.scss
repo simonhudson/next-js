@@ -6,9 +6,6 @@
 	position: relative;
 	
 	@include breakpoint(tab-p) {
-		@include border-b();
-		@include margin-b-xlg();
-	    @include no-padding();
 		align-items: center;
 		display: flex;
 		justify-content: space-between;

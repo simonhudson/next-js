@@ -1,0 +1,53 @@
+@import 'static/css/styles';
+
+.site-footer {
+	@include border-t();
+	@include padding-y-lg();
+}
+
+.site-footer__wrap {
+	
+	@include breakpoint(tab-p) {	    
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+}
+
+.site-footer p {
+	@include no-margin();
+	@include small();
+}
+
+.site-footer-navigation {
+	
+	@include breakpoint(tab-p) {	    
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+}
+
+.site-footer-navigation__list {
+	@include padding-y-lg();
+	list-style: none;
+	
+	@include breakpoint(tab-p) {
+	    @include no-padding();
+	}
+	
+}
+
+.site-footer-navigation__item {
+	@include margin-r();
+	display: inline;
+	
+	&:last-of-type {
+		@include no-margin();
+	}
+}
+
+.site-footer-navigation__link {
+	@include small();
+}

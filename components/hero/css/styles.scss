@@ -2,13 +2,22 @@
 
 .hero {
 	@include gradient();
-	@include margin-b-xlg();
 	display: flex;
-	height: $base-font-size * 10;
+	height: 100px;
+	
+	@include breakpoint(tab-p) {
+	    height: 200px;
+	}
+	
 }
 
 .hero--large {
-	height: $base-font-size * 20;
+	height: 200px;
+
+	@include breakpoint(tab-p) {
+	    height: 350px;
+	}
+	
 }
 
 .hero__inner {

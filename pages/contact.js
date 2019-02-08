@@ -8,7 +8,6 @@ import Hero from 'components/hero';
 const Contact = props => {
 	return (
 		<>
-			<Hero title="Contact" />
 			<div className="wrap">
 				<ContactForm />
 			</div>

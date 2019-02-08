@@ -4,6 +4,8 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import css from 'static/css/styles.scss';
 
 import Alert from 'components/alert';
+import Hero from 'components/hero';
+import SiteFooter from 'components/site-footer';
 import SiteHeader from 'components/site-header';
 
 export default class App extends Document {
@@ -12,7 +14,7 @@ export default class App extends Document {
 		const initialProps = await Document.getInitialProps(ctx)
 		return { ...initialProps }
 	}
-
+	
 	render() {
 		
 		const { props } = this;
@@ -32,7 +34,11 @@ export default class App extends Document {
 					</Alert>
 				</noscript>
 				<SiteHeader {...props} />
-				<Main />
+				<Hero {...props} />
+				<main>
+					<Main />
+				</main>
+				<SiteFooter {...props} />
 			</body>
 			</html>
 		)

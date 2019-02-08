@@ -27,7 +27,7 @@ class MainNavigation extends Component {
 				</button>
 				<nav className={`main-navigation ${this.state.isOpen ? 'main-navigation--is-open' : ''}`}>
 					<ul className="main-navigation__list">
-						{PAGES.map((item, index) => <Item href={item.href} text={item.text} isCurrentPath={item.href === this.props.currentPath} key={index}/>)}
+						{PAGES.map((item, index) => <Item href={item.navigation.href} text={item.navigation.text} isCurrentPath={item.navigation.href === this.props.currentPath} key={index}/>)}
 					</ul>
 				</nav>
 			</>
