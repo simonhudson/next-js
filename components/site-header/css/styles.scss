@@ -2,6 +2,7 @@
 
 .site-header {
 	@include padding();
+	@include wrap();
 	position: relative;
 	
 	@include breakpoint(tab-p) {

@@ -1,0 +1,10 @@
+@mixin wrap() {
+	@include padding-x-lg();
+	@include width-full();
+	margin: 0 auto;
+
+	@include breakpoint(tab-p) {
+		padding: 0;
+		width: 85%;
+	}
+}

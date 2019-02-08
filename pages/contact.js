@@ -2,14 +2,16 @@
 
 import React from 'react';
 
-import Heading from 'components/typography/heading';
 import ContactForm from 'components/contact-form';
+import Hero from 'components/hero';
 
 const Contact = props => {
 	return (
 		<>
-			<Heading level="1">Contact</Heading>
-			<ContactForm />
+			<Hero title="Contact" />
+			<div className="wrap">
+				<ContactForm />
+			</div>
 		</>
 	);
 };

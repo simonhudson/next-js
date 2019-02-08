@@ -2,12 +2,12 @@
 
 import React from 'react';
 
-import Heading from 'components/typography/heading';
+import Hero from 'components/hero';
 
 const About = props => {
 	return (
 		<>
-			<Heading level="1">About</Heading>
+			<Hero title="About us" />
 		</>
 	);
 };

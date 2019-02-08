@@ -1,0 +1,25 @@
+@import 'static/css/styles';
+
+.hero {
+	@include gradient();
+	@include margin-b-xlg();
+	display: flex;
+	height: $base-font-size * 10;
+}
+
+.hero--large {
+	height: $base-font-size * 20;
+}
+
+.hero__inner {
+	@include wrap();
+	align-items: center;
+	display: flex;
+}
+
+.hero__title {
+	@include sans-serif();
+	color: palette(primary, white);
+	margin: 0;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
+}
