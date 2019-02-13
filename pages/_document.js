@@ -33,7 +33,6 @@ export default class App extends Document {
 						<p>This site works best when JavaScript is available in your browser.</p>
 					</Alert>
 				</noscript>
-				<SiteHeader {...props} />
 				<Hero {...props} />
 				<main>
 					<Main />

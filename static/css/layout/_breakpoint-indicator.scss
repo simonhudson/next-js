@@ -4,15 +4,15 @@ body::after {
 	display: inline-block;
 	content: 'mobile';
 	
-	@include breakpoint(tab-p) {
+	@include media(tablet-p) {
 	    content: 'tablet-p'
 	}
 	
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 	    content: 'tablet-l'
 	}
 	
-	@include breakpoint(desktop) {
+	@include media(desktop) {
 	    content: 'desktop'
 	}
 	

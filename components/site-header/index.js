@@ -12,7 +12,7 @@ const SiteHeader = props => {
 		<>
 			<header className="site-header">
 				<SiteLogo />
-				<MainNavigation currentPath={getCurrentPath(props)} />
+				<MainNavigation currentPath={null} />
 			</header>
 		</>
 	);	

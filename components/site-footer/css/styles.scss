@@ -7,7 +7,7 @@
 
 .site-footer__wrap {
 	
-	@include breakpoint(tab-p) {	    
+	@include media(tablet-p) {	    
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
@@ -22,7 +22,7 @@
 
 .site-footer-navigation {
 	
-	@include breakpoint(tab-p) {	    
+	@include media(tablet-p) {	    
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -33,7 +33,7 @@
 	@include padding-y-lg();
 	list-style: none;
 	
-	@include breakpoint(tab-p) {
+	@include media(tablet-p) {
 	    @include no-padding();
 	}
 	

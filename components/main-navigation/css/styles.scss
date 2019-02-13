@@ -8,10 +8,10 @@
 	box-shadow: 0 0 10px #ddd;
 	height: 100vh;
 	left: -100vw;
-	max-width: 33vw;
-	width: 33vw;
+	max-width: 85vw;
+	width: 85vw;
 	
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 		@include width-full();
 		border: 0;
 		box-shadow: none;
@@ -22,6 +22,7 @@
 		max-width: 100%;
 	    position: static;
 		top: auto;
+		width: 100%;
 	}
 	
 }
@@ -40,7 +41,7 @@
 
 .main-navigation__item {
 	
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 	    display: inline;
 	}
 	
@@ -57,7 +58,7 @@
 	
 	
 	
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 		border: 0;
 	    display: inline-block;
 	}
@@ -65,7 +66,7 @@
 
 .main-navigation__link--current {
 	
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 	    border-bottom: 5px solid palette(primary, a);
 	}
 	
@@ -81,8 +82,8 @@
 	height: 30px;
 	width: 30px;
 	
-	@include breakpoint(tab-l) {
-	    display: none;
+	@include media(tablet-l) {
+	    // display: none;
 	}
 	
 }

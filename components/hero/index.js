@@ -6,10 +6,24 @@ const NAMESPACE = 'hero';
 const PAGES = require('config/pages');
 const getCurrentPath = require('static/js/utilities/get-current-path');
 
+const CONFIG = {
+	'/': {
+		isLarge: true,
+		title: 'Welcome'
+	},
+	'/about': {
+		title: ''
+	},
+	'/contact': {
+		title: 'Get in touch'
+	}
+}
+
 const Hero = props => {
 	
 	const currentPath = getCurrentPath(props);
-	const heroData = PAGES.filter(item => item.navigation.href === currentPath)[0].hero;
+	const heroData = CONFIG[currentPath];
+	if (!heroData) return null;
 	
 	const setClass = () => {
 		const values = [NAMESPACE];

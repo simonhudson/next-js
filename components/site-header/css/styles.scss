@@ -5,7 +5,7 @@
 	@include wrap();
 	position: relative;
 	
-	@include breakpoint(tab-p) {
+	@include media(tablet-p) {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;

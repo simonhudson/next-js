@@ -3,7 +3,7 @@
 	@include width-full();
 	margin: 0 auto;
 
-	@include breakpoint(tab-p) {
+	@include media(tablet-p) {
 		padding: 0;
 		width: 85%;
 	}
@@ -12,7 +12,7 @@
 @mixin wrap-narrow() {
 	@include wrap();
 
-	@include breakpoint(tab-p) {
+	@include media(tablet-p) {
 		width: 45%;
 	}
 

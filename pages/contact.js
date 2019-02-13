@@ -3,7 +3,6 @@
 import React from 'react';
 
 import ContactForm from 'components/contact-form';
-import Hero from 'components/hero';
 
 const Contact = props => {
 	return (

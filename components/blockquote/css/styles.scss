@@ -10,7 +10,7 @@
 	font-size: rem($base-font-size * 1.1);
 	line-height: $base-line-height * 1.2;
 	
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 	    width: 50%;
 	}
 	

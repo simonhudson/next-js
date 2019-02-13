@@ -19,7 +19,7 @@ const SiteFooter = props => {
 					<p>Copyright &copy; {getCurrentYear()}</p>
 					<nav className="site-footer-navigation">
 						<ul className="site-footer-navigation__list">
-							{PAGES.map(item => <li className="site-footer-navigation__item"><a className="site-footer-navigation__link" href={`${item.navigation.href}`}>{item.navigation.text}</a></li>)}
+							{PAGES.map((item, index) => <li className="site-footer-navigation__item" key={index}><a className="site-footer-navigation__link" href={`${item.navigation.href}`}>{item.navigation.text}</a></li>)}
 						</ul>
 					</nav>
 				</div>

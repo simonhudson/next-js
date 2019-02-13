@@ -9,7 +9,7 @@ const SiteLogo = props => {
 	return (
 		<>
 			<div className="site-logo">
-				<img alt="Home" className="site-logo__img" src="/static/imgs/experian-logo.svg" />
+				<img alt="Home" className="site-logo__img" src="/static/imgs/experian-logox.svg" />
 			</div>
 		</>
 	);

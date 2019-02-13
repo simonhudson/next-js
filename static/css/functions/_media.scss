@@ -1,4 +1,4 @@
-@mixin breakpoint($breakpoint, $direction: min) {
+@mixin media($breakpoint, $direction: min) {
   @if not map-has-key($breakpoints, $breakpoint) {
     @warn "No value could be retrieved from `#{$breakpoint}`. " + "Please make sure it is defined in `$breakpoints` map.";
   }

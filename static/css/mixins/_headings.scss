@@ -8,35 +8,35 @@
 @mixin h1() {
 	@include headings();
 	font-size: rem($base-font-size * 2);
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 		font-size: rem($base-font-size * 3);
 	}
 }
 @mixin h2() {
 	@include headings();
 	font-size: rem($base-font-size * 1.8);
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 		font-size: rem($base-font-size * 1.8);
 	}
 }
 @mixin h3() {
 	@include headings();
 	font-size: rem($base-font-size * 1.6);
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 		font-size: rem($base-font-size * 1.6);
 	}
 }
 @mixin h4() {
 	@include headings();
 	font-size: rem($base-font-size * 1.4);
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 		font-size: rem($base-font-size * 1.4);
 	}
 }
 @mixin h5() {
 	@include headings();
 	font-size: rem($base-font-size * 1.2);
-	@include breakpoint(tab-l) {
+	@include media(tablet-l) {
 		font-size: rem($base-font-size * 1.2);
 	}
 }
