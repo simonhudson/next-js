@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import Label from 'components/forms/label';
 import css from './css/styles.scss';
 
 const Input = props => {
@@ -18,11 +19,8 @@ const Input = props => {
 
 	return (
 		<>
-			<label className={`${labelIsHidden ? 'visuallyhidden' : ''}`} htmlFor={`${id}`}>{`${label}`}</label>
-			<input
-				id={`${id}`}
-				type={getType()}
-			/>
+			<Label id={id} isHidden={labelIsHidden} text={label} />
+			<input id={`${id}`} type={getType()} />
 		</>
 	);
 

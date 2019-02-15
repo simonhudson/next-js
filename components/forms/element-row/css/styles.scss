@@ -2,4 +2,9 @@
 
 .form-element-row {
 	@include padding-b();
+	
+	@include media(tablet-l) {
+    	@include width-third();
+	}
+	
 }

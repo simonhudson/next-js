@@ -1,0 +1,8 @@
+@import 'static/css/styles';
+
+label,
+.faux-label {
+	@include margin-b();
+	@include semi-strong();
+	display: block;
+}

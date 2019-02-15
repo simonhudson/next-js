@@ -1,22 +1,16 @@
 @import 'static/css/styles';
 
-label {
-	@include margin-b();
-	@include semi-strong();
-	display: block;
-}
-
 input {
 	@include border();
 	@include box-shadow($spread: 0);
 	@include margin-b-lg();
 	@include padding();
 	@include transition();
+	@include width-full();
 }
 
 input:focus {
 	@include box-shadow();
-	border-color: palette(primary, a);
 }
 
 input[type=number] {

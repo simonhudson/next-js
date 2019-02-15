@@ -22,21 +22,21 @@
 }
 
 .btn--primary {
-	@include gradient();
+	@include gradient('primary, b');
 	
 	&:hover,
 	&:focus {
-		background-image: linear-gradient(-180deg, palette(primary, a) 0%, darken(palette(primary, a), 10%) 100%);
+		@include gradient-invert('primary, b');
 	}
 	
 }
 
 .btn--secondary {
-	@include gradient('primary, b');
+	@include gradient();
 	
 	&:hover,
 	&:focus {
-		background-image: linear-gradient(-180deg, palette(primary, b) 0%, darken(palette(primary, b), 10%) 100%);
+		@include gradient-invert();
 	}
 	
 }

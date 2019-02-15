@@ -1,0 +1,23 @@
+@import 'static/css/styles';
+
+select::-ms-expand { 
+    display: none;
+}
+
+select {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+	@include border();
+	@include box-shadow($spread: 0);
+	@include margin-b-lg();
+	@include padding();
+	@include transition();
+	@include width-full();
+	background: url('/static/imgs/icons/chevron-down-thin.svg') center right 0.5em no-repeat #fff;
+    background-size: 1em 0.75em;
+}
+
+select:focus {
+	@include box-shadow();
+}
