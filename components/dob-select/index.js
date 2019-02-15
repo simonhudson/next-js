@@ -14,7 +14,7 @@ const currentYear = now.getUTCFullYear();
 
 const DateOfBirthSelect = props => {
 	
-	const minAge = parseInt(props.minAge, 10) || 100;
+	const minAge = parseInt(props.minAge, 10) || 0;
 	
 	const OPTIONS = {
 		day: generateNumberArray({ start: 1, end: 31 }),
